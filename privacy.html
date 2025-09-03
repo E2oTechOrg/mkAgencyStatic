@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Organic - Grocery Store HTML Website Template</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+<body>
+
+  <script>
+    
+  document.addEventListener("DOMContentLoaded", function () {
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading header:", error));
+});
+
+  </script>
+<header>
+    <div id="header"></div>
+</header>
+
+
+<section class="privacy-section mark py-5" style="background-color:#f8f9fa;">
+  <div class="container">
+    <div class="row align-items-start">
+      
+      <!-- Left Content -->
+      <div class="col-lg-7 col-md-12">
+        <h2 class="fw-bold text-start mb-4">Privacy Policy</h2>
+        <p class="fs-5 mb-4">
+          At <strong>MK Agency</strong>, we respect and protect the privacy of our customers, partners, and website users. 
+          This Privacy Policy explains how we collect, use, store, and safeguard your personal information.
+        </p>
+
+        <h5 class="fw-semibold mt-4">Information We Collect</h5>
+        <ul>
+          <li>Name, phone number, email, and postal address</li>
+          <li>Billing and shipping information</li>
+          <li>Payment details (processed via secure gateways; we do not store sensitive financial data)</li>
+          <li>Order history and purchase preferences</li>
+          <li>Website usage data (cookies, IP address, browser type)</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">How We Use Your Information</h5>
+        <ul>
+          <li>Processing and delivering orders</li>
+          <li>Communicating order updates, invoices, and shipping details</li>
+          <li>Responding to queries and customer support requests</li>
+          <li>Sending promotional offers, newsletters, and updates (if you opt-in)</li>
+          <li>Improving our products, services, and website performance</li>
+          <li>Compliance with legal and regulatory requirements</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Data Sharing &amp; Disclosure</h5>
+        <ul>
+          <li>We do not sell or rent customer data to third parties.</li>
+          <li>Data may be shared with trusted partners (payment processors, courier companies, customs agents) solely to complete transactions.</li>
+          <li>Information may be disclosed if required by law or to protect our rights.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Data Security</h5>
+        <ul>
+          <li>We use industry-standard security measures, including encryption, firewalls, and secure servers.</li>
+          <li>Sensitive payment info is processed through certified gateways.</li>
+          <li>Access to customer data is restricted to authorized personnel.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Cookies &amp; Tracking</h5>
+        <ul>
+          <li>Our site may use cookies to enhance browsing and personalize services.</li>
+          <li>Cookies can be disabled, but some features may not work properly.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">International Data Transfers</h5>
+        <ul>
+          <li>Export orders may require sharing info with shipping agents, customs, and logistics providers.</li>
+          <li>All transfers comply with relevant regulations (e.g., GDPR).</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Customer Rights</h5>
+        <ul>
+          <li>Access stored personal data</li>
+          <li>Request corrections or updates</li>
+          <li>Request deletion (subject to legal/transactional needs)</li>
+          <li>Opt out of promotional communications</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Data Retention</h5>
+        <ul>
+          <li>Data is retained only as long as needed for transactions, legal compliance, or service improvements.</li>
+          <li>When no longer needed, it is securely deleted or anonymized.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Third-Party Links</h5>
+        <ul>
+          <li>Our site may link to third-party websites. We are not responsible for their privacy practices.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Policy Updates</h5>
+        <ul>
+          <li>MK Agency may update this Privacy Policy anytime. Updates will be posted here, and continued use means acceptance.</li>
+        </ul>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-5 col-md-12 text-center">
+        <img src="images/privacy.jpg" alt="Privacy Policy" class="img-fluid rounded shadow">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+    <div id="footer"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading header:", error));
+});
+
+    </script>
+  
+ <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

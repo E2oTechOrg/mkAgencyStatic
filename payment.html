@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Organic - Grocery Store HTML Website Template</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+<body>
+
+  <script>
+    
+  document.addEventListener("DOMContentLoaded", function () {
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading header:", error));
+});
+
+  </script>
+<header>
+    <div id="header"></div>
+</header>
+
+
+<section class="payment-section mark py-5" style="background-color:#f8f9fa;">
+  <div class="container">
+    <div class="row align-items-start">
+
+      <!-- Left Content -->
+      <div class="col-lg-7 col-md-12">
+        <h2 class="fw-bold text-start mb-4">Payment Policy</h2>
+        <p class="fs-5 mb-4">
+          At <strong>MK Agency</strong>, we believe in transparency and fairness in all financial transactions. 
+          The following terms outline our payment guidelines for retail, wholesale, and export customers.
+        </p>
+
+        <h5 class="fw-semibold mt-4">Accepted Payment Methods</h5>
+        <ul>
+          <li>Retail customers can pay via UPI, debit/credit cards, net banking, wallets, or Cash on Delivery (where available).</li>
+          <li>Bulk and export customers may use bank transfers, demand drafts, or Letters of Credit (LC).</li>
+          <li>International payments can be made via SWIFT transfer or other agreed modes.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Advance Payments</h5>
+        <ul>
+          <li>Retail orders must be 100% prepaid unless Cash on Delivery (COD) is offered.</li>
+          <li>Wholesale/export orders generally require 50% advance payment at order confirmation and balance before dispatch, unless otherwise agreed.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Credit Terms (B2B &amp; Export Clients)</h5>
+        <ul>
+          <li>Credit facilities may be extended to long-term, verified customers on a case-to-case basis.</li>
+          <li>Payment due dates must be strictly adhered to, and overdue accounts may attract interest/late fees.</li>
+          <li>Failure to clear dues may result in suspension of services and future order restrictions.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Currency &amp; Forex Handling</h5>
+        <ul>
+          <li>Domestic payments must be made in INR (Indian Rupees).</li>
+          <li>Export payments may be accepted in USD, EUR, GBP, or other mutually agreed currencies.</li>
+          <li>All currency conversion charges, bank fees, and forex fluctuations are to be borne by the buyer.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Taxes &amp; Duties</h5>
+        <ul>
+          <li>All domestic orders are subject to GST as per government regulations.</li>
+          <li>Export orders are subject to customs duties, import taxes, and clearance charges in the destination country, payable by the buyer.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Payment Confirmation</h5>
+        <ul>
+          <li>Orders are processed only after successful payment confirmation.</li>
+          <li>For bank transfers, customers must share transaction details to avoid delays.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Non-Payment &amp; Default</h5>
+        <ul>
+          <li>MK Agency reserves the right to withhold shipments if payments are not received as per agreed terms.</li>
+          <li>Persistent default may lead to account termination and legal action, if necessary.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Refunds &amp; Adjustments</h5>
+        <ul>
+          <li>Any excess payment or adjustments (for returned/canceled goods) will be refunded or credited to the customer’s account within 7–10 working days.</li>
+          <li>Refunds for export clients will be handled as per international banking timelines.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Dispute Handling</h5>
+        <ul>
+          <li>In case of any payment disputes, customers are requested to contact our support team.</li>
+          <li>Disputes will be resolved in line with applicable laws and mutually agreed trade terms (e.g., Incoterms for exports).</li>
+        </ul>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-5 col-md-12 text-center">
+        <img src="images/payment.jpg" alt="Payment Policy" class="img-fluid rounded shadow">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+    <div id="footer"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading header:", error));
+});
+
+    </script>
+  
+ <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

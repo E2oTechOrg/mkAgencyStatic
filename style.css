@@ -13,6 +13,56 @@ This is main CSS file that contains custom style rules used in this template
 /*--------------------------------------------------------------
 /** VARIABLES
 --------------------------------------------------------------*/
+
+   header {
+      position: fixed;   /* keeps it fixed */
+      top: 0;
+      left: 0;
+      width: 100%;
+      background-color: white; /* yellow header */
+      z-index: 1000;  /* always on top */
+    }
+
+/* Default (desktop / large screens) */
+.mark {
+  margin-top: 90px;
+}
+/* Input field styles */
+.custom-input {
+  border: 1px solid #ddd !important;  /* light gray border */
+  border-radius: 6px;
+  box-shadow: none;
+}
+
+/* Reduce form size slightly for smaller screens */
+@media (max-width: 768px) {
+  .contact-section .bg-white {
+    padding: 20px !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Tablets (up to 992px) */
+@media (max-width: 992px) {
+  .mark {
+    margin-top: 70px;
+  }
+}
+
+/* Mobile (up to 768px) */
+@media (max-width: 768px) {
+  .mark {
+    margin-top: 160px;
+  }
+}
+
+/* Extra small mobile (up to 576px) */
+@media (max-width: 576px) {
+  .mark {
+    margin-top: 190px;
+  }
+}
+
 body {
   --heading-font        : "Inter", sans-serif;
   --bs-link-color: #333;
@@ -185,6 +235,19 @@ h1,h2,h3,h4,h5,h6 {
   z-index: 111;
   background: #fff;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+ .zoom-text {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out; /* smooth zoom */
+  }
+  .zoom-text:hover {
+    transform: scale(1.2); /* zoom in the text */
+  }
 
 .preloader-wrapper .preloader {
   margin: 20% auto 0;
@@ -363,7 +426,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 0.5rem;
 }
 .product-item .button-area {
-  display: none;
+  display: block;
   position: absolute;
   text-align: center;
   background: #fff;
@@ -383,9 +446,8 @@ input[type=number]::-webkit-outer-spin-button {
   box-shadow: 0px 0px 22px rgba(0, 0, 0, 0);
   /* transition: box-shadow 0.3s ease-out, margin 0.3s ease-out; */
 }
-.product-item:hover .button-area {
-  display: block;
-}
+
+
 .product-item:hover {
   /* z-index: 1; */
   /* margin-bottom: -50px; */
@@ -516,9 +578,21 @@ input[type=number]::-webkit-outer-spin-button {
 .button-area .btn-cart {
   text-wrap: nowrap;
   height: 3.3em;
+  background-color: #0B852E;
   line-height: 2em;
   width: 100%;
+  color: #fff; /* ensures text stays visible */
+  border: none;
+  transition: background-color 0.3s ease; /* smooth transition */
 }
+
+.button-area .btn-cart:hover {
+  background-color: #F9C81F;
+  color: #000; /* optional: better contrast on yellow */
+}
+
+
+
 .fs-7 {
   font-size: 0.8rem!important;
 }
