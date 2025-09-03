@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Organic - Grocery Store HTML Website Template</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+<body>
+
+  <script>
+    
+  document.addEventListener("DOMContentLoaded", function () {
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading header:", error));
+});
+
+  </script>
+<header>
+    <div id="header"></div>
+</header>
+
+
+<section class="about-section py-5 mark" style="background-color: #f8f9fa;">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Left Side (Image) -->
+      <div class="col-md-6 text-center mb-4 mb-md-0">
+        <div class="about-image" 
+             style="width: 300px; height: 200px; border-radius: 50%; overflow: hidden; margin: auto;">
+          <img src="images/MkLogoHeader.png" alt="About Company" class="img-fluid w-70 h-100" style="object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Right Side (Content) -->
+      <div class="col-md-6">
+        <h2 class="fw-bold">About Our Company</h2>
+        <p>
+            At MK Agency, we are your trusted source for premium grocery and household essentials. With a focus on quality, affordability, and reliability, we provide a wide range of packaged products including grains, pulses, spices, dairy items, snacks, beverages, and everyday kitchen staples.
+We work closely with reputed distributors and leading brands to ensure that every product we deliver meets the highest standards of freshness, safety, and value. Our goal is to make grocery shopping simple and convenient for both families and businesses, while maintaining competitive pricing and exceptional service.
+
+        </p>
+        <ul class="mb-0 ps-3">
+            <li>
+                Wide range of quality grocery products under one roof
+            </li>
+            <li>Affordable prices without compromising on standards</li>
+            <li>Reliable bulk supply for homes and businesses</li>
+            <li>Long-term commitment to customer satisfaction</li>
+            <li>Trusted name in the grocery retail sector</li>
+            <p>
+                At MK Agency, it’s not just about groceries – it’s about delivering trust, value, and convenience to every customer we serve.
+            </p>
+          </ul>
+        <a href="#" class="btn btn-dark px-4">Learn More</a>
+      </div>
+    </div>
+
+    <!-- Bottom Boxes -->
+    <div class="row text-center mt-5">
+      <!-- Mission -->
+      <div class="col-md-6 mb-3">
+        <div class="p-4 bg-primary text-white h-100 text-start" style="text-align: justify; line-height: 1.7;">
+          <h5 class="fw-bold">Our Mission</h5><br>
+          <ul class="mb-0 ps-3">
+            <li>At MK Agency, our mission is to provide high-quality, affordable, and reliable grocery products that meet the everyday needs of families, businesses, and international partners.</li>
+            <li>We are dedicated to ensuring a seamless supply of grains, pulses, spices, dairy items, snacks, beverages, and other essential household products.</li>
+            <li>Beyond serving the domestic market, we are equally focused on expanding our export operations, delivering Indian grocery products to global communities with the same standards of freshness, safety, and excellence.</li>
+            <li>Through strong partnerships with reputed suppliers and brands, we aim to build trust, enhance convenience, and create long-lasting value for our customers across local and international markets.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Vision -->
+      <div class="col-md-6 mb-3">
+        <div class="p-4 bg-dark text-white h-100 text-start" style="text-align: justify; line-height: 1.7;">
+          <h5 class="fw-bold text-light">Our Vision</h5><br>
+          <p>
+            Our vision is to position MK Agency as a leading name in the grocery retail and export industry, recognized for our uncompromising commitment to quality, trust, and customer satisfaction. We aspire to become a preferred partner for households, retailers, and international distributors by:
+          </p>
+          <ul class="mb-3 ps-3">
+            <li>Offering a comprehensive range of essential grocery products under one roof</li>
+            <li>Expanding our export footprint across global markets with a reputation for excellence</li>
+            <li>Leveraging technology and efficient logistics for seamless customer experience</li>
+            <li>Contributing to the growth of local communities and supporting businesses with reliable supply</li>
+            <li>Setting new benchmarks for affordability, accessibility, and service standards in the grocery industry</li>
+          </ul>
+          <p>
+            We envision a future where MK Agency not only meets everyday needs but also becomes a globally trusted brand, delivering value and convenience to customers wherever they are.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core Values -->
+    <div class="row mt-5">
+      <div class="col-12">
+        <div class="p-4 bg-light border rounded shadow-sm">
+          <h5 class="fw-bold text-dark mb-4">Core Values – MK Agency</h5>
+          <p>
+            At MK Agency, our business is built on a foundation of strong values that guide every decision and every product we deliver. These values define who we are and how we serve our customers, both locally and globally.
+          </p>
+          <ul class="ps-3" style="line-height: 1.7;">
+            <li><strong>Quality First:</strong> We are committed to sourcing and delivering only the best grocery products. Every item we supply reflects our dedication to freshness, safety, and reliability.</li>
+            <li><strong>Trust & Integrity:</strong> Honesty and transparency are at the heart of our operations. We believe in building long-term relationships based on mutual trust with customers, suppliers, and partners.</li>
+            <li><strong>Customer-Centric Approach:</strong> Our customers are our priority. We constantly strive to understand their needs and deliver solutions that bring convenience, satisfaction, and value.</li>
+            <li><strong>Affordability with Value:</strong> We ensure competitive pricing without compromising on product quality, making essential groceries accessible to families and businesses of all sizes.</li>
+            <li><strong>Global Outlook:</strong> With a strong focus on export, we aim to represent Indian grocery products on the international stage, ensuring that our commitment to excellence reaches communities worldwide.</li>
+            <li><strong>Sustainability & Responsibility:</strong> We recognize our responsibility towards society and the environment. Our goal is to support sustainable sourcing, reduce waste, and contribute positively to the communities we serve.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+    <div id="footer"></div>
+    <script>  document.addEventListener("DOMContentLoaded", function () {
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading header:", error));
+});
+</script>
+  
+ <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Organic - Grocery Store HTML Website Template</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- Bootstrap Icons CDN -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="css/vendor.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+<body>
+
+  <script>
+    
+  document.addEventListener("DOMContentLoaded", function () {
+  fetch("header.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("header").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading header:", error));
+});
+
+  </script>
+<header>
+    <div id="header"></div>
+</header>
+
+
+<section class="refund-section mark py-5" style="background-color:#f8f9fa;">
+  <div class="container">
+    <div class="row align-items-start">
+      
+      <!-- Left Content -->
+      <div class="col-lg-7 col-md-12">
+        <h2 class="fw-bold text-start mb-4">Cancellation &amp; Refund Policy</h2>
+        <p class="fs-5 mb-4">
+          At <strong>MK Agency</strong>, we strive to provide quality products and a smooth shopping experience. 
+          This policy explains the conditions under which cancellations, returns, and refunds are accepted.
+        </p>
+
+        <h5 class="fw-semibold mt-4">Order Cancellation</h5>
+        <ul>
+          <li>Customers may cancel retail orders within 24 hours of purchase, provided the order has not been processed or shipped.</li>
+          <li>For bulk/export orders, cancellations must be made before dispatch and require written confirmation.</li>
+          <li>Once an order is shipped, cancellation requests will not be accepted.</li>
+          <li>MK Agency reserves the right to cancel orders in case of:
+            <ul>
+              <li>Suspected fraudulent activity</li>
+              <li>Incorrect billing/shipping information</li>
+              <li>Product unavailability or force majeure events</li>
+            </ul>
+          </li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Non-Cancellable Orders</h5>
+        <ul>
+          <li>Customized, bulk, or export orders once confirmed cannot be canceled unless there is a major product or shipment issue.</li>
+          <li>Perishable or short-shelf-life grocery products are non-cancellable once shipped.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Return Policy</h5>
+        <ul>
+          <li>Returns are accepted only if:
+            <ul>
+              <li>The wrong product was delivered</li>
+              <li>The product was damaged during transit</li>
+              <li>The product is expired or defective upon delivery</li>
+            </ul>
+          </li>
+          <li>Customers must notify us within 7 working days of delivery with proof (photo/video).</li>
+          <li>Returned products must be unused, unopened, and in original packaging.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Refund Policy</h5>
+        <ul>
+          <li>Approved refunds will be issued to the original payment method within 7–10 business days.</li>
+          <li>Refunds are not applicable for:
+            <ul>
+              <li>Change of mind</li>
+              <li>Incorrect product selection by the customer</li>
+              <li>Products damaged due to improper storage/handling after delivery</li>
+            </ul>
+          </li>
+          <li>For bulk/export shipments, refunds will only be processed after verification and inspection reports (if applicable).</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Replacement Option</h5>
+        <ul>
+          <li>Instead of refunds, customers may request product replacement (subject to stock availability).</li>
+          <li>If the error was on our part, MK Agency will cover replacement shipping costs.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Shipping &amp; Handling Charges</h5>
+        <ul>
+          <li>Shipping charges, customs duties, and taxes are non-refundable.</li>
+          <li>For export returns, buyers must bear return freight, customs clearance, and related costs unless the error was solely MK Agency’s responsibility.</li>
+        </ul>
+
+        <h5 class="fw-semibold mt-4">Dispute Resolution</h5>
+        <ul>
+          <li>Any disputes related to cancellations or refunds will be resolved under Indian law.</li>
+          <li>For export orders, disputes will be handled under mutually agreed international trade terms.</li>
+        </ul>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-5 col-md-12 text-center">
+        <img src="images/cancel.jpg" alt="Refund Policy" class="img-fluid rounded shadow">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+    <div id="footer"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+  fetch("footer.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("footer").innerHTML = data;
+    })
+    .catch(error => console.error("Error loading header:", error));
+});
+
+    </script>
+  
+ <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

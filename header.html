@@ -1,41 +1,60 @@
 <div class="container-fluid">
   <div class="row py-3 border-bottom">
+    <!-- Logo -->
     <div
       class="col-sm-4 col-lg-2 text-center text-sm-start d-flex gap-3 justify-content-center justify-content-md-start"
     >
-      <div class="d-flex align-items-center my-3 my-sm-0">
-        <a href="index.html">
-          <img
-            width="90px"
-            src="images/MkLogoHeader.png"
-            alt="logo"
-            class="img-fluid"
-          />
-        </a>
-      </div>
-      <button
+    <div class="d-flex flex-column align-items-center my-1">
+  <a href="index.html" class="mb-1">
+    <img
+      width="90"
+      src="images/MkLogoHeader.png"
+      alt="logo"
+      class="img-fluid"
+    />
+  </a>
+  <span class="fw-bold text-dark text-center" style="line-height: 1;">MK Agencies</span>
+</div>
+
+
+      <!-- <button
         class="navbar-toggler"
         type="button"
         data-bs-toggle="offcanvas"
         data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar"
       >
-        <svg width="24" height="24" viewBox="0 0 24 24">
-          <use xlink:href="#menu"></use>
-        </svg>
-      </button>
+        <img src="images/menu.png" alt="Menu" width="24" height="24" />
+      </button> -->
     </div>
 
-    <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-4">
+    <!-- Search Bar -->
+    <!-- <div class="col-sm-6 offset-sm-2 offset-md-0 col-lg-4">
       <div class="search-bar row bg-light p-2 rounded-4">
-        <div class="col-md-4 d-none d-md-block">
-          <select class="form-select border-0 bg-transparent">
-            <option>All Categories</option>
-            <option>Groceries</option>
-            <option>Drinks</option>
-            <option>Chocolates</option>
-          </select>
-        </div>
+ <div class="col-md-4 d-none d-md-block">
+  <select id="categoryDropdown" class="form-select border-0 bg-transparent">
+    <option value="">All Categories</option>
+    <option value="#pulse">Pulses, Grains & Seeds</option>
+    <option value="#Nuts-Dry-Fruits">Nuts & Dry Fruits</option>
+    <option value="#Spices-Masalas">Spices & Masalas</option>
+    <option value="#Herbs-Seasonings">Herbs & Seasonings</option>
+    <option value="#Sweet-eners">Sweeteners</option>
+    <option value="#Leaves-Spices">Leaves & Spices</option>
+    <option value="#Packaged-Items">Packaged Items</option>
+    <option value="#Grocery-Essentials">Grocery Essentials</option>
+  </select>
+</div>
+
+<script>
+  document.getElementById("categoryDropdown").addEventListener("change", function () {
+    const target = this.value;
+    if (target) {
+      location.href = target; 
+    }
+  });
+</script>
+
+
         <div class="col-11 col-md-7">
           <form
             id="search-form"
@@ -50,39 +69,32 @@
             />
           </form>
         </div>
-        <div class="col-1">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-          >
-            <path
-              fill="currentColor"
-              d="M21.71 20.29L18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a1 1 0 0 0 1.42 0a1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 7-7a7 7 0 0 1-7 7Z"
-            />
-          </svg>
+        <div class="col-1 d-flex align-items-center justify-content-center">
+          <img src="images/search.png" alt="Search" width="24" height="24" />
         </div>
       </div>
-    </div>
+    </div> -->
 
-    <div class="col-lg-4">
+    <!-- Navigation Menu -->
+    <div class="col-lg-8">
       <ul
-        class="navbar-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center mb-0 fw-bold text-uppercase text-dark"
+        class="navbar-nav list-unstyled d-flex flex-row gap-3 gap-lg-5 justify-content-center flex-wrap align-items-center mb-0 fw-bold text-dark"
       >
         <li class="nav-item active">
           <a href="index.html" class="nav-link">Home</a>
         </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle pe-3"
-            role="button"
-            id="pages"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            >Pages</a
-          >
-          <ul
+        <li class="nav-item active">
+          <a href="products.html" class="nav-link">Products</a>
+        </li>
+           <li class="nav-item">
+          <a href="about.html" class="nav-link">About</a>
+        </li>
+
+         <li class="nav-item">
+          <a href="contact.html" class="nav-link">Contact</a>
+        </li>
+
+          <!-- <ul
             class="dropdown-menu border-0 p-3 rounded-0 shadow"
             aria-labelledby="pages"
           >
@@ -116,29 +128,26 @@
             <li>
               <a href="index.html" class="dropdown-item">404 Error </a>
             </li>
-          </ul>
+          </ul> -->
         </li>
       </ul>
     </div>
 
+    <!-- Icons -->
     <div
       class="col-sm-8 col-lg-2 d-flex gap-5 align-items-center justify-content-center justify-content-sm-end"
     >
       <ul class="d-flex justify-content-end list-unstyled m-0">
-        <li>
+        <!-- <li>
           <a href="#" class="p-2 mx-1">
-            <svg width="24" height="24">
-              <use xlink:href="#user"></use>
-            </svg>
+            <img src="images/user.png" alt="User" width="24" height="24" />
           </a>
         </li>
         <li>
           <a href="#" class="p-2 mx-1">
-            <svg width="24" height="24">
-              <use xlink:href="#wishlist"></use>
-            </svg>
+            <img src="images/wishlist.png" alt="Wishlist" width="24" height="24" />
           </a>
-        </li>
+        </li> -->
         <li>
           <a
             href="#"
@@ -147,9 +156,7 @@
             data-bs-target="#offcanvasCart"
             aria-controls="offcanvasCart"
           >
-            <svg width="24" height="24">
-              <use xlink:href="#shopping-bag"></use>
-            </svg>
+            <img src="images/bag.png" alt="Cart" width="36" height="36" />
           </a>
         </li>
       </ul>
