@@ -24,8 +24,8 @@
 
 const products = [
   {
-    title: "Almond Powder",
-    image: "images/PulsesGrainSeeds/Almond Powder.jpg",
+    title: "பாதாம் பிசின்",
+    image: "images/PulsesGrainSeeds/badampisin.webp",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -33,7 +33,7 @@ const products = [
     discount: "10% OFF"
   },
   {
-    title: "Barley",
+    title: "பார்லி",
     image: "images/PulsesGrainSeeds/Barley.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -42,7 +42,7 @@ const products = [
     discount: "10% OFF"
   },
   {
-    title: "Sago",
+    title: "ஜவ்வரிசி",
     image: "images/PulsesGrainSeeds/Sago.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -51,17 +51,17 @@ const products = [
     discount: "10% OFF"
   },
   {
-    title: "Basil Seeds",
-    image: "images/PulsesGrainSeeds/Basil Seeds.jpg",
+    title: "சப்ஜா விதை",
+    image: "images/PulsesGrainSeeds/basil seess.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
     newPrice: 240.00,
     discount: "10% OFF"
   },
-  {
-    title: "Black Sesame Seeds",
-    image: "images/PulsesGrainSeeds/Black Sesame Seeds.jpg",
+   {
+    title: "விரலி மஞ்சள்",
+    image: "images/PulsesGrainSeeds/virali.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -121,17 +121,8 @@ products.forEach(product => {
 
 const SpicesMasalas = [
   {
-    title: "White Turmeric",
-    image: "images/SpicesMasalas/White Turmeric.jpg",
-    rating: 4.5,
-    reviews: "1 KG",
-    oldPrice: 24.00,
-    newPrice: 220.00,
-    discount: "10% OFF"
-  },
-  {
-    title: "Turmeric Pepper",
-    image: "images/SpicesMasalas/Turmeric Pepper.jpg",
+    title: "மஞ்சள் கிழங்கு",
+    image: "images/PulsesGrainSeeds/viralimanjal.jpeg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -139,7 +130,7 @@ const SpicesMasalas = [
     discount: "10% OFF"
   },
   {
-    title: "Cumin Seeds",
+    title: "சீரகம்",
     image: "images/SpicesMasalas/Cumin Seeds.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -147,9 +138,18 @@ const SpicesMasalas = [
     newPrice: 295.00,
     discount: "10% OFF"
   },
+   {
+    title: "கருஞ்சீரகம்",
+    image: "images/SpicesMasalas/karuppusiragam.jpg",
+    rating: 4.5,
+    reviews: "1 KG",
+    oldPrice: 24.00,
+    newPrice: 295.00,
+    discount: "10% OFF"
+  },
   {
-    title: "Fennel Seeds",
-    image: "images/SpicesMasalas/Fennel Seeds.jpg",
+    title: "சோம்பு",
+    image: "images/SpicesMasalas/sombu.webp",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -157,7 +157,7 @@ const SpicesMasalas = [
     discount: "10% OFF"
   },
   {
-    title: "Fenugreek Seeds",
+    title: "வெந்தயம்",
     image: "images/SpicesMasalas/Fenugreek Seeds.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -166,8 +166,8 @@ const SpicesMasalas = [
     discount: "10% OFF"
   },
   {
-    title: "Black Pepper",
-    image: "images/SpicesMasalas/Black Pepper.jpg",
+    title: "கடுகு",
+    image: "images/SpicesMasalas/Mustard-Seed.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -175,8 +175,17 @@ const SpicesMasalas = [
     discount: "10% OFF"
   },
   {
-    title: "White Pepper",
-    image: "images/SpicesMasalas/White Pepper.jpg",
+    title: "வெண் கடுகு",
+    image: "images/SpicesMasalas/ven.jpeg",
+    rating: 4.5,
+    reviews: "1 KG",
+    oldPrice: 24.00,
+    newPrice: 120.00,
+    discount: "10% OFF"
+  },
+  {
+    title: "மிளகு",
+    image: "images/SpicesMasalas/Black Pepper.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -232,16 +241,7 @@ SpicesMasalas.forEach(product => {
 
 const NutsDryFruits = [
   {
-    title: "(Dry Grapes) → Raisins",
-    image: "images/NutsDryFruits/(Dry Grapes).jpg",
-    rating: 4.5,
-    reviews: "1 KG",
-    oldPrice: 24.00,
-    newPrice: 310.00,
-    discount: "10% OFF"
-  },
-  {
-    title: "Almonds",
+    title: "பாதாம்",
     image: "images/NutsDryFruits/Almonds.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -250,7 +250,7 @@ const NutsDryFruits = [
     discount: "10% OFF"
   },
   {
-    title: "Cashew Nuts",
+    title: "முந்திரி",
     image: "images/NutsDryFruits/Cashew Nuts.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -259,7 +259,7 @@ const NutsDryFruits = [
     discount: "10% OFF"
   },
   {
-    title: "Pistachios",
+    title: "பிஸ்தா",
     image: "images/NutsDryFruits/Pistachios.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -268,7 +268,7 @@ const NutsDryFruits = [
     discount: "10% OFF"
   },
   {
-    title: "Raisins (Nasik variety)",
+    title: "கிஸ்மிஸ் (Nasik)",
     image: "images/NutsDryFruits/Raisins (Nasik variety).jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -277,8 +277,8 @@ const NutsDryFruits = [
     discount: "10% OFF"
   },
   {
-    title: "Raisins (Stump)",
-    image: "images/NutsDryFruits/Raisins (Thompson Seedless variety).jpg",
+    title: "கிஸ்மிஸ்",
+    image: "images/NutsDryFruits/Raisins (Local variety).jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -286,8 +286,8 @@ const NutsDryFruits = [
     discount: "10% OFF"
   },
   {
-    title: "Raisins (Local variety)",
-    image: "images/NutsDryFruits/Raisins (Local variety).jpg",
+    title: "கருப்பு கிஸ்மிஸ்",
+    image: "images/NutsDryFruits/Raisins (Thompson Seedless variety).jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -345,8 +345,8 @@ NutsDryFruits.forEach(product => {
 
 const HerbsSeasonings = [
   {
-    title: "White Sesame Seeds",
-    image: "images/HerbsSeasonings/White Sesame Seeds.jpg",
+    title: "கிராம்பு",
+    image: "images/HerbsSeasonings/kirambu.webp",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -354,7 +354,7 @@ const HerbsSeasonings = [
     discount: "10% OFF"
   },
   {
-    title: "Cinnamon",
+    title: "பட்டை",
     image: "images/HerbsSeasonings/Cinnamon.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -363,7 +363,7 @@ const HerbsSeasonings = [
     discount: "10% OFF"
   },
   {
-    title: "Cassia (Chinese Cinnamon)",
+    title: "சுருள் பட்டை",
     image: "images/HerbsSeasonings/Cassia (Chinese Cinnamon).jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -372,8 +372,8 @@ const HerbsSeasonings = [
     discount: "10% OFF"
   },
   {
-    title: "Black Cumin",
-    image: "images/HerbsSeasonings/Caraway Seeds.jpg",
+    title: "Diamond சீனிகற்கண்டு",
+    image: "images/HerbsSeasonings/diamond.png",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -381,8 +381,8 @@ const HerbsSeasonings = [
     discount: "10% OFF"
   },
   {
-    title: "Nutmeg",
-    image: "images/HerbsSeasonings/Nutmeg.jpg",
+    title: "வெள்ளை எள்ளு",
+    image: "images/HerbsSeasonings/white.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -390,7 +390,16 @@ const HerbsSeasonings = [
     discount: "10% OFF"
   },
   {
-    title: "Cardamom",
+    title: "கருப்பு எள்ளு",
+    image: "images/HerbsSeasonings/karuppu.jpg",
+    rating: 4.5,
+    reviews: "1 KG",
+    oldPrice: 24.00,
+    newPrice: 750.00,
+    discount: "10% OFF"
+  },
+  {
+    title: "ஏலக்காய்",
     image: "images/HerbsSeasonings/Cardamom.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -399,8 +408,8 @@ const HerbsSeasonings = [
     discount: "10% OFF"
   },
   {
-    title: "Poppy Seeds",
-    image: "images/HerbsSeasonings/Poppy Seeds.jpg",
+    title: "கசகச",
+    image: "images/HerbsSeasonings/kasakasa.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -456,8 +465,8 @@ HerbsSeasonings.forEach(product => {
 
 const Sweeteners = [
   {
-    title: "Spice Mix for Soup",
-    image: "images/Sweeteners/Soup Masala.jpg",
+    title: "சாரப் பருப்பு",
+    image: "images/Sweeteners/sara.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -465,7 +474,7 @@ const Sweeteners = [
     discount: "10% OFF"
   },
   {
-    title: "Nutmeg",
+    title: "ஜாதிக்காய்",
     image: "images/Sweeteners/Nutmeg.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -474,7 +483,7 @@ const Sweeteners = [
     discount: "10% OFF"
   },
   {
-    title: "(Javitri) → Mace",
+    title: "ஜாதிப்பத்திரி",
     image: "images/Sweeteners/Mace.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -483,7 +492,7 @@ const Sweeteners = [
     discount: "10% OFF"
   },
   {
-    title: "Panam Kalkandu",
+    title: "பனங்கற்கண்டு",
     image: "images/Sweeteners/Palm Candy.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -492,7 +501,7 @@ const Sweeteners = [
     discount: "10% OFF"
   },
   {
-    title: "Palm Jaggery (Palm Sugar)",
+    title: "நயம் பனங்கற்கண்டு",
     image: "images/Sweeteners/Palm Jaggery (Palm Sugar).jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -501,7 +510,7 @@ const Sweeteners = [
     discount: "10% OFF"
   },
   {
-    title: "Saffron",
+    title: "குங்குமப் பூ",
     image: "images/Sweeteners/Saffron.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -558,8 +567,8 @@ Sweeteners.forEach(product => {
 
 const LeavesSpices = [
   {
-    title: "Indian Borage (Karpooravalli)",
-    image: "images/LeavesSpices/Indian Borage.jpg",
+    title: "சுக்கு",
+    image: "images/LeavesSpices/sukku.webp",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -567,7 +576,7 @@ const LeavesSpices = [
     discount: "10% OFF"
   },
   {
-    title: "Carom Seeds (Ajwain)",
+    title: "ஓமம்",
     image: "images/LeavesSpices/Carom Seeds.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -576,7 +585,7 @@ const LeavesSpices = [
     discount: "10% OFF"
   },
   {
-    title: "Star Anise",
+    title: "அன்னாசிப் பூ",
     image: "images/LeavesSpices/Star Anise.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -585,7 +594,7 @@ const LeavesSpices = [
     discount: "10% OFF"
   },
   {
-    title: "Black Stone Flower (Kalpasi)",
+    title: "கல்பாசி",
     image: "images/LeavesSpices/Black Stone Flower.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -594,7 +603,7 @@ const LeavesSpices = [
     discount: "10% OFF"
   },
   {
-    title: "Dry Red Chilli",
+    title: "சலங்கை",
     image: "images/LeavesSpices/Dry Red Chilli (Salangai variety).jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -603,7 +612,7 @@ const LeavesSpices = [
     discount: "10% OFF"
   },
   {
-    title: "Bay Leaf",
+    title: "பிரியாணி இலை",
     image: "images/LeavesSpices/Bay Leaf.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -658,8 +667,8 @@ LeavesSpices.forEach(product => {
 
 const PackagedItems = [
   {
-    title: "Cumin Seeds (Packet 50g, 100g)",
-    image: "images/PackagedItems/Cumin Seeds.jpg",
+    title: "சீரகம் (50g, 100g)",
+    image: "images/SpicesMasalas/Cumin Seeds.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -667,8 +676,8 @@ const PackagedItems = [
     discount: "10% OFF"
   },
   {
-    title: "Fennel Seeds (Packet 50g, 100g)",
-    image: "images/PackagedItems/Fennel Seeds.jpg",
+    title: "சோம்பு(50g, 100g)",
+    image: "images/SpicesMasalas/sombu.webp",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -676,8 +685,8 @@ const PackagedItems = [
     discount: "10% OFF"
   },
   {
-    title: "Fenugreek Seeds (Packet 50g, 100g)",
-    image: "images/PackagedItems/Fenugreek Seeds.jpg",
+    title: "வெந்தயம்(50g, 100g)",
+    image: "images/SpicesMasalas/Fenugreek Seeds.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -685,8 +694,8 @@ const PackagedItems = [
     discount: "10% OFF"
   },
   {
-    title: "Coriander Seeds (Packet 50g, 100g)",
-    image: "images/PackagedItems/Coriander Seeds.jpg",
+    title: "கடுகு(50g, 100g)",
+    image: "images/SpicesMasalas/Mustard-Seed.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -694,7 +703,7 @@ const PackagedItems = [
     discount: "10% OFF"
   },
   {
-    title: "Black Pepper (Packet 50g, 100g)",
+    title: "மிளகு(50g, 100g)",
     image: "images/PackagedItems/Black Pepper.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -703,8 +712,8 @@ const PackagedItems = [
     discount: "10% OFF"
   },
   {
-    title: "Turmeric Powder (Packet 100g)",
-    image: "images/PackagedItems/Turmeric Powder.jpg",
+    title: "மஞ்சள்(100g)",
+    image: "images/PulsesGrainSeeds/viralimanjal.jpeg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -712,8 +721,17 @@ const PackagedItems = [
     discount: "10% OFF"
   },
    {
-    title: "Salt Powder (Packet 250g)",
-    image: "images/PackagedItems/Salt Powder.jpg",
+    title: "அக்ரூட் PKT (250g)",
+    image: "images/PackagedItems/akrut.jpg",
+    rating: 4.5,
+    reviews: "1 KG",
+    oldPrice: 24.00,
+    newPrice: 900.00,
+    discount: "10% OFF"
+  },
+  {
+    title: "உப்பு பிஸ்தா PKT(250g)",
+    image: "images/PackagedItems/saltpista.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -768,17 +786,8 @@ PackagedItems.forEach(product => {
 
 const GroceryEssentials = [
   {
-    title: "Salt Powder (Packet 250g)",
-    image: "images/GroceryEssentials/Salt Powder (Packet 250g).jpg",
-    rating: 4.5,
-    reviews: "1 KG",
-    oldPrice: 24.00,
-    newPrice: 1080.00,
-    discount: "10% OFF"
-  },
-  {
-    title: "Sweet Flag (Acorus Calamus)",
-    image: "images/GroceryEssentials/Sweet Flag.jpg",
+    title: "வசம்பு",
+    image: "images/GroceryEssentials/vasambu.webp",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -786,7 +795,7 @@ const GroceryEssentials = [
     discount: "10% OFF"
   },
   {
-    title: "Baking Soda",
+    title: "RB சோடா",
     image: "images/GroceryEssentials/Baking Soda (Sodium Bicarbonate).jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -795,7 +804,7 @@ const GroceryEssentials = [
     discount: "10% OFF"
   },
   {
-    title: "Corn Flour",
+    title: "சோள மாவு",
     image: "images/GroceryEssentials/Corn Flour.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -804,7 +813,7 @@ const GroceryEssentials = [
     discount: "10% OFF"
   },
   {
-    title: "MSG / Ajinomoto",
+    title: "அஜினோமோட்டோ",
     image: "images/GroceryEssentials/Ajinomoto.jpg",
     rating: 4.5,
     reviews: "1 KG",
@@ -813,8 +822,8 @@ const GroceryEssentials = [
     discount: "10% OFF"
   },
   {
-    title: "Ponnanganni Rice – 30kg Bag",
-    image: "images/GroceryEssentials/Ponnanganni Rice – 30kg Bag.jpg",
+    title: "பொரி கடலை – 30kg",
+    image: "images/GroceryEssentials/pori.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -822,8 +831,8 @@ const GroceryEssentials = [
     discount: "10% OFF"
   },
    {
-    title: "Ponnanganni Rice – 55kg Bag",
-    image: "images/GroceryEssentials/Ponnanganni Rice – 55kg Bag.jpg",
+    title: "பொரி கடலை – 55kg",
+    image: "images/GroceryEssentials/pori.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
