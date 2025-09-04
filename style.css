@@ -63,6 +63,9 @@ This is main CSS file that contains custom style rules used in this template
   }
 }
 
+
+
+
 body {
   --heading-font        : "Inter", sans-serif;
   --bs-link-color: #333;
