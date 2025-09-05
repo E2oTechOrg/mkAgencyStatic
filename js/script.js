@@ -122,7 +122,7 @@ products.forEach(product => {
 const SpicesMasalas = [
   {
     title: "மஞ்சள் கிழங்கு",
-    image: "images/PulsesGrainSeeds/viralimanjal.jpeg",
+    image: "images/kundumajal.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -603,15 +603,6 @@ const LeavesSpices = [
     discount: "10% OFF"
   },
   {
-    title: "சலங்கை",
-    image: "images/LeavesSpices/Dry Red Chilli (Salangai variety).jpg",
-    rating: 4.5,
-    reviews: "1 KG",
-    oldPrice: 24.00,
-    newPrice: 590.00,
-    discount: "10% OFF"
-  },
-  {
     title: "பிரியாணி இலை",
     image: "images/LeavesSpices/Bay Leaf.jpg",
     rating: 4.5,
@@ -823,7 +814,7 @@ const GroceryEssentials = [
   },
   {
     title: "பொரி கடலை – 30kg",
-    image: "images/GroceryEssentials/pori.jpg",
+    image: "images/GroceryEssentials/Pottu-Kadalai.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
@@ -832,7 +823,7 @@ const GroceryEssentials = [
   },
    {
     title: "பொரி கடலை – 55kg",
-    image: "images/GroceryEssentials/pori.jpg",
+    image: "images/GroceryEssentials/Pottu-Kadalai.jpg",
     rating: 4.5,
     reviews: "1 KG",
     oldPrice: 24.00,
