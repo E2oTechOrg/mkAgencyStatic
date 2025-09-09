@@ -23,6 +23,15 @@
 
 
 const products = [
+   {
+    title: "விரலி மஞ்சள்",
+    image: "images/PulsesGrainSeeds/virali.jpg",
+    rating: 4.5,
+    reviews: "1 KG"
+    // oldPrice: 24.00,
+    // newPrice: 220.00,
+    // discount: "10% OFF"
+  },
   {
     title: "பாதாம் பிசின்",
     image: "images/PulsesGrainSeeds/badampisin.webp",
@@ -57,15 +66,6 @@ const products = [
     reviews: "1 KG"
     // oldPrice: 24.00,
     // newPrice: 240.00,
-    // discount: "10% OFF"
-  },
-   {
-    title: "விரலி மஞ்சள்",
-    image: "images/PulsesGrainSeeds/virali.jpg",
-    rating: 4.5,
-    reviews: "1 KG"
-    // oldPrice: 24.00,
-    // newPrice: 220.00,
     // discount: "10% OFF"
   }
 ];
