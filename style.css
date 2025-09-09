@@ -379,6 +379,10 @@ html {
   margin-top: 20px;
 }
 
+.corner{
+  border-radius: 50px;
+}
+
 /* brand carousel */
 .brand-carousel .brand-item {
   background: #FFFFFF;
