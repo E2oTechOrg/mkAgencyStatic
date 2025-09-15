@@ -756,14 +756,13 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", () => {
-    // ❌ Clear cart on every refresh (remove this if you want persistence)
-    localStorage.removeItem("cart");
-    let cart = [];
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
     const cartList = document.getElementById("cartList");
     const cartCount = document.getElementById("cartCount");
 
     document.addEventListener("click", function (e) {
+      // Add to cart
       if (e.target.closest(".btn-cart")) {
         e.preventDefault();
         const btn = e.target.closest(".btn-cart");
@@ -773,13 +772,24 @@
         const qtyInput = productCard.querySelector(".quantity");
         const qty = parseInt(qtyInput.value) || 1;
 
-        const existing = cart.find((item) => item.title === title);
+        const unitSelect = productCard.querySelector("select[name='unit']");
+        const unit = unitSelect.value;
+
+        const existing = cart.find((item) => item.title === title && item.unit === unit);
+
         if (existing) {
           existing.qty += qty;
         } else {
-          cart.push({ title, qty });
+          cart.push({ title, qty, unit });
         }
 
+        updateCart();
+      }
+
+      // Delete from cart
+      if (e.target.closest(".btn-delete")) {
+        const index = parseInt(e.target.closest(".btn-delete").getAttribute("data-index"));
+        cart.splice(index, 1);
         updateCart();
       }
     });
@@ -787,15 +797,21 @@
     function updateCart() {
       cartList.innerHTML = "";
 
-      cart.forEach((item) => {
+      cart.forEach((item, index) => {
         cartList.innerHTML += `
-          <li class="list-group-item d-flex justify-content-between lh-sm">
+          <li class="list-group-item d-flex justify-content-between align-items-center lh-sm">
             <div>
               <h6 class="my-0">${item.title}</h6>
               <small class="text-body-secondary">
-                Quantity: ${item.qty}
+                Quantity: ${item.qty} ${item.unit}
               </small>
             </div>
+            <button class="btn btn-sm btn-danger btn-delete" data-index="${index}" title="Remove">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
+                <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
+                <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9.5A1.5 1.5 0 0 1 11.5 15h-7A1.5 1.5 0 0 1 3 13.5V4h-.5a1 1 0 0 1-1-1V2h13v1zM4.118 4 4 4.059V13.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
+              </svg>
+            </button>
           </li>
         `;
       });
@@ -804,15 +820,13 @@
         cartList.innerHTML = `<li class="list-group-item text-center">Your cart is empty</li>`;
       }
 
-      cartCount.textContent = cart.reduce((sum, item) => sum + item.qty, 0);
+      cartCount.textContent = cart.length;
 
       localStorage.setItem("cart", JSON.stringify(cart));
     }
 
-    // ✅ Initialize empty cart display
     updateCart();
 
-    // 🔹 Make sendToWhatsApp available globally
     window.sendToWhatsApp = function () {
       if (!Array.isArray(cart) || cart.length === 0) {
         alert("Your cart is empty!");
@@ -823,30 +837,25 @@
 
       cart.forEach((item, index) => {
         message += `${index + 1}. ${item.title}\n`;
-        message += `   Quantity: ${item.qty}\n\n`;
+        message += `   Quantity: ${item.qty} ${item.unit}\n\n`;
       });
 
       message += `--------------------------\n`;
-      message += `Total Items: ${cart.reduce((sum, item) => sum + item.qty, 0)}\n`;
+      message += `Total Items: ${cart.length}\n`;
       message += `--------------------------`;
 
       let encodedMessage = encodeURIComponent(message);
-      let phoneNumber = "919791550055"; // ✅ your WhatsApp number
+      let phoneNumber = "916380623206";
       let url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
       window.open(url, "_blank");
 
-      // ✅ Clear cart after sending
       cart = [];
       localStorage.removeItem("cart");
       updateCart();
     };
   });
 </script>
-
-
-
-
 
 
 
