@@ -244,6 +244,13 @@ html {
 }
 
 
+.nav-link {
+  color: #008000; /* Green font */
+  /* -webkit-text-stroke: 1px #fff; */
+  /* font-weight: bold; */
+  font-size: 18px; /* adjust as needed */
+}
+
  .zoom-text {
     display: inline-block;
     transition: transform 0.3s ease-in-out; /* smooth zoom */
