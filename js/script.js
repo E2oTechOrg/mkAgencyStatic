@@ -27,7 +27,7 @@ const products = [
     title: "விரலி மஞ்சள்",
     image: "images/PulsesGrainSeeds/virali.jpg",
     rating: 4.5,
-    reviews: "1 KG"
+    // reviews: "1 KG"
     // oldPrice: 24.00,
     // newPrice: 220.00,
     // discount: "10% OFF"
@@ -36,7 +36,7 @@ const products = [
     title: "பாதாம் பிசின்",
     image: "images/PulsesGrainSeeds/badampisin.webp",
     rating: 4.5,
-    reviews: "1 KG"
+    // reviews: "1 KG"
     // oldPrice: 24.00,
     // newPrice: 520.00,
     // discount: "10% OFF"
@@ -45,7 +45,7 @@ const products = [
     title: "பார்லி",
     image: "images/barley.jpg",
     rating: 4.5,
-    reviews: "1 KG"
+    // reviews: "1 KG"
     // oldPrice: 54.00,
     // newPrice: 60.00,
     // discount: "10% OFF"
@@ -54,7 +54,7 @@ const products = [
     title: "ஜவ்வரிசி",
     image: "images/PulsesGrainSeeds/Sago.jpg",
     rating: 4.5,
-    reviews: "1 KG"
+    // reviews: "1 KG"
     // oldPrice: 14.00,
     // newPrice: 75.00,
     // discount: "10% OFF"
@@ -63,7 +63,7 @@ const products = [
     title: "சப்ஜா விதை",
     image: "images/PulsesGrainSeeds/basil seess.jpg",
     rating: 4.5,
-    reviews: "1 KG"
+    // reviews: "1 KG"
     // oldPrice: 24.00,
     // newPrice: 240.00,
     // discount: "10% OFF"
@@ -86,7 +86,7 @@ products.forEach(product => {
           <h3 class="fs-6 fw-normal">${product.title}</h3>
           <div>
             <span class="rating">${generateStars(product.rating)}</span>
-            <span>(${product.reviews})</span>
+            
           </div>
           
           <div class="button-area p-3 pt-0">
@@ -126,7 +126,7 @@ const SpicesMasalas = [
     title: "மஞ்சள் கிழங்கு",
     image: "images/kundumajal.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 340.00,
     // discount: "10% OFF"
@@ -135,7 +135,7 @@ const SpicesMasalas = [
     title: "சீரகம்",
     image: "images/SpicesMasalas/Cumin Seeds.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 295.00,
     // discount: "10% OFF"
@@ -144,7 +144,7 @@ const SpicesMasalas = [
     title: "கருஞ்சீரகம்",
     image: "images/SpicesMasalas/karuppusiragam.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 295.00,
     // discount: "10% OFF"
@@ -153,7 +153,7 @@ const SpicesMasalas = [
     title: "சோம்பு",
     image: "images/SpicesMasalas/sombu.webp",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 160.00,
     // discount: "10% OFF"
@@ -162,7 +162,7 @@ const SpicesMasalas = [
     title: "வெந்தயம்",
     image: "images/SpicesMasalas/Fenugreek Seeds.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 95.00,
     // discount: "10% OFF"
@@ -171,7 +171,7 @@ const SpicesMasalas = [
     title: "கடுகு",
     image: "images/SpicesMasalas/Mustard-Seed.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 95.00,
     // discount: "10% OFF"
@@ -180,7 +180,7 @@ const SpicesMasalas = [
     title: "வெண் கடுகு",
     image: "images/SpicesMasalas/ven.jpeg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 120.00,
     // discount: "10% OFF"
@@ -189,7 +189,7 @@ const SpicesMasalas = [
     title: "மிளகு",
     image: "images/SpicesMasalas/Black Pepper.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 120.00,
     // discount: "10% OFF"
@@ -211,7 +211,7 @@ SpicesMasalas.forEach(product => {
         <h3 class="fs-6 fw-normal">${product.title}</h3>
         <div>
           <span class="rating">${generateStars(product.rating)}</span>
-          <span>(${product.reviews})</span>
+          
         </div>
        
         <div class="button-area p-3 pt-0">
@@ -246,7 +246,7 @@ const NutsDryFruits = [
     title: "பாதாம்",
     image: "images/NutsDryFruits/Almonds.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 800.00,
     // discount: "10% OFF"
@@ -255,7 +255,7 @@ const NutsDryFruits = [
     title: "முந்திரி",
     image: "images/NutsDryFruits/Cashew Nuts.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 800.00,
     // discount: "10% OFF"
@@ -264,7 +264,7 @@ const NutsDryFruits = [
     title: "பிஸ்தா",
     image: "images/pista.webp",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 1850.00,
     // discount: "10% OFF"
@@ -273,7 +273,7 @@ const NutsDryFruits = [
     title: "கிஸ்மிஸ் (Nasik)",
     image: "images/NutsDryFruits/Raisins (Nasik variety).jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 310.00,
     // discount: "10% OFF"
@@ -282,7 +282,7 @@ const NutsDryFruits = [
     title: "கிஸ்மிஸ்",
     image: "images/NutsDryFruits/Raisins (Local variety).jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 470.00,
     // discount: "10% OFF"
@@ -291,7 +291,7 @@ const NutsDryFruits = [
     title: "கருப்பு கிஸ்மிஸ்",
     image: "images/NutsDryFruits/Raisins (Thompson Seedless variety).jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 310.00,
     // discount: "10% OFF"
@@ -314,7 +314,7 @@ NutsDryFruits.forEach(product => {
         <h3 class="fs-6 fw-normal">${product.title}</h3>
         <div>
           <span class="rating">${generateStars(product.rating)}</span>
-          <span>(${product.reviews})</span>
+          
         </div>
         
         <div class="button-area p-3 pt-0">
@@ -350,7 +350,7 @@ const HerbsSeasonings = [
     title: "கிராம்பு",
     image: "images/HerbsSeasonings/kirambu.webp",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 260.00,
     // discount: "10% OFF"
@@ -359,7 +359,7 @@ const HerbsSeasonings = [
     title: "பட்டை",
     image: "images/pattai.webp",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 255.00,
     // discount: "10% OFF"
@@ -368,7 +368,7 @@ const HerbsSeasonings = [
     title: "சுருள் பட்டை",
     image: "images/HerbsSeasonings/Cassia (Chinese Cinnamon).jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 1350.00,
     // discount: "10% OFF"
@@ -377,7 +377,7 @@ const HerbsSeasonings = [
     title: "Diamond சீனிகற்கண்டு",
     image: "images/HerbsSeasonings/diamond.png",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 75.00,
     // discount: "10% OFF"
@@ -386,7 +386,7 @@ const HerbsSeasonings = [
     title: "வெள்ளை எள்ளு",
     image: "images/HerbsSeasonings/white.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 750.00,
     // discount: "10% OFF"
@@ -395,7 +395,7 @@ const HerbsSeasonings = [
     title: "கருப்பு எள்ளு",
     image: "images/HerbsSeasonings/karuppu.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 750.00,
     // discount: "10% OFF"
@@ -404,7 +404,7 @@ const HerbsSeasonings = [
     title: "ஏலக்காய்",
     image: "images/HerbsSeasonings/Cardamom.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 3000.00,
     // discount: "10% OFF"
@@ -413,7 +413,7 @@ const HerbsSeasonings = [
     title: "கசகச",
     image: "images/HerbsSeasonings/kasakasa.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 1950.00,
     // discount: "10% OFF"
@@ -435,7 +435,7 @@ HerbsSeasonings.forEach(product => {
         <h3 class="fs-6 fw-normal">${product.title}</h3>
         <div>
           <span class="rating">${generateStars(product.rating)}</span>
-          <span>(${product.reviews})</span>
+          
         </div>
         
         <div class="button-area p-3 pt-0">
@@ -470,7 +470,7 @@ const Sweeteners = [
     title: "சாரப் பருப்பு",
     image: "images/Sweeteners/sara.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 1950.00,
     // discount: "10% OFF"
@@ -479,7 +479,7 @@ const Sweeteners = [
     title: "ஜாதிக்காய்",
     image: "images/Sweeteners/Nutmeg.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 2300.00,
     // discount: "10% OFF"
@@ -488,7 +488,7 @@ const Sweeteners = [
     title: "ஜாதிப்பத்திரி",
     image: "images/jathipathri.jpeg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 70.00,
     // discount: "10% OFF"
@@ -497,7 +497,7 @@ const Sweeteners = [
     title: "பனங்கற்கண்டு",
     image: "images/Sweeteners/Palm Candy.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 500.00,
     // discount: "10% OFF"
@@ -506,7 +506,7 @@ const Sweeteners = [
     title: "நயம் பனங்கற்கண்டு",
     image: "images/Sweeteners/Palm Jaggery (Palm Sugar).jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 280.00,
     // discount: "10% OFF"
@@ -515,7 +515,7 @@ const Sweeteners = [
   //   title: "குங்குமப் பூ",
   //   image: "images/Sweeteners/Saffron.jpg",
   //   rating: 4.5,
-  //   reviews: "1 KG",
+    // reviews: "1 KG",
   //   oldPrice: 24.00,
   //   newPrice: 320.00,
   //   discount: "10% OFF"
@@ -537,7 +537,7 @@ Sweeteners.forEach(product => {
         <h3 class="fs-6 fw-normal">${product.title}</h3>
         <div>
           <span class="rating">${generateStars(product.rating)}</span>
-          <span>(${product.reviews})</span>
+          
         </div>
        
         <div class="button-area p-3 pt-0">
@@ -572,7 +572,7 @@ const LeavesSpices = [
     title: "சுக்கு",
     image: "images/LeavesSpices/sukku.webp",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 320.00,
     // discount: "10% OFF"
@@ -581,7 +581,7 @@ const LeavesSpices = [
     title: "ஓமம்",
     image: "images/LeavesSpices/Carom Seeds.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 340.00,
     // discount: "10% OFF"
@@ -590,7 +590,7 @@ const LeavesSpices = [
     title: "அன்னாசிப் பூ",
     image: "images/LeavesSpices/Star Anise.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 650.00,
     // discount: "10% OFF"
@@ -599,7 +599,7 @@ const LeavesSpices = [
     title: "கல்பாசி",
     image: "images/LeavesSpices/Black Stone Flower.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 520.00,
     // discount: "10% OFF"
@@ -608,7 +608,7 @@ const LeavesSpices = [
     title: "பிரியாணி இலை",
     image: "images/LeavesSpices/Bay Leaf.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 130.00,
     // discount: "10% OFF"
@@ -629,7 +629,7 @@ LeavesSpices.forEach(product => {
         <h3 class="fs-6 fw-normal">${product.title}</h3>
         <div>
           <span class="rating">${generateStars(product.rating)}</span>
-          <span>(${product.reviews})</span>
+          
         </div>
         
         <div class="button-area p-3 pt-0">
@@ -663,7 +663,7 @@ const PackagedItems = [
     title: "சீரகம் (50g, 100g)",
     image: "images/SpicesMasalas/Cumin Seeds.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 275.00,
     // discount: "10% OFF"
@@ -672,7 +672,7 @@ const PackagedItems = [
     title: "சோம்பு(50g, 100g)",
     image: "images/SpicesMasalas/sombu.webp",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 150.00,
     // discount: "10% OFF"
@@ -681,7 +681,7 @@ const PackagedItems = [
     title: "வெந்தயம்(50g, 100g)",
     image: "images/SpicesMasalas/Fenugreek Seeds.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 90.00,
     // discount: "10% OFF"
@@ -690,7 +690,7 @@ const PackagedItems = [
     title: "கடுகு(50g, 100g)",
     image: "images/SpicesMasalas/Mustard-Seed.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 100.00,
     // discount: "10% OFF"
@@ -699,7 +699,7 @@ const PackagedItems = [
     title: "மிளகு(50g, 100g)",
     image: "images/PackagedItems/Black Pepper.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 750.00,
     // discount: "10% OFF"
@@ -708,7 +708,7 @@ const PackagedItems = [
     title: "மஞ்சள்(100g)",
     image: "images/PulsesGrainSeeds/viralimanjal.jpeg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 225.00,
     // discount: "10% OFF"
@@ -717,7 +717,7 @@ const PackagedItems = [
     title: "அக்ரூட் PKT (250g)",
     image: "images/PackagedItems/akrut.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 900.00,
     // discount: "10% OFF"
@@ -726,7 +726,7 @@ const PackagedItems = [
     title: "உப்பு பிஸ்தா PKT(250g)",
     image: "images/NutsDryFruits/Pistachios.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 900.00,
     // discount: "10% OFF"
@@ -747,7 +747,7 @@ PackagedItems.forEach(product => {
         <h3 class="fs-6 fw-normal">${product.title}</h3>
         <div>
           <span class="rating">${generateStars(product.rating)}</span>
-          <span>(${product.reviews})</span>
+          
         </div>
       
         <div class="button-area p-3 pt-0">
@@ -782,7 +782,7 @@ const GroceryEssentials = [
     title: "வசம்பு",
     image: "images/GroceryEssentials/vasambu.webp",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 200.00,
     // discount: "10% OFF"
@@ -791,7 +791,7 @@ const GroceryEssentials = [
     title: "RB சோடா",
     image: "images/GroceryEssentials/Baking Soda (Sodium Bicarbonate).jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 50.00,
     // discount: "10% OFF"
@@ -800,7 +800,7 @@ const GroceryEssentials = [
     title: "சோள மாவு",
     image: "images/GroceryEssentials/Corn Flour.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 58.00,
     // discount: "10% OFF"
@@ -809,7 +809,7 @@ const GroceryEssentials = [
     title: "அஜினோமோட்டோ",
     image: "images/GroceryEssentials/Ajinomoto.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 130.00,
     // discount: "10% OFF"
@@ -818,7 +818,7 @@ const GroceryEssentials = [
     title: "பொரி கடலை – 30kg",
     image: "images/GroceryEssentials/Pottu-Kadalai.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 2920.00,
     // discount: "10% OFF"
@@ -827,7 +827,7 @@ const GroceryEssentials = [
     title: "பொரி கடலை – 55kg",
     image: "images/GroceryEssentials/Pottu-Kadalai.jpg",
     rating: 4.5,
-    reviews: "1 KG",
+    // reviews: "1 KG",
     // oldPrice: 24.00,
     // newPrice: 5355.00,
     // discount: "10% OFF"
@@ -848,7 +848,7 @@ GroceryEssentials.forEach(product => {
         <h3 class="fs-6 fw-normal">${product.title}</h3>
         <div>
           <span class="rating">${generateStars(product.rating)}</span>
-          <span>(${product.reviews})</span>
+          
         </div>
        
         <div class="button-area p-3 pt-0">
