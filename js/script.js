@@ -76,7 +76,7 @@ const productGrid = document.getElementById("productGrid");
 products.forEach(product => {
   productGrid.innerHTML += `
     <div class="col">
-      <div class="product-item">
+      <div class="product-item" style="margin-bottom:100px">
         <figure>
           <a href="index.html" title="${product.title}">
         <img src="${product.image}" alt="${product.title}" class="tab-image" style="width:230px; height:210px; object-fit:cover;" />
@@ -94,7 +94,13 @@ products.forEach(product => {
               <div class="col-4">
                 <input type="number" name="quantity" class="form-control border-dark-subtle input-number quantity" value="1"/>
               </div>
-              <div class="col-7">
+                 <div class="col-7">
+            <select name="unit" class="form-select border-dark-subtle" style="height: 41px;">
+              <option value="grams">Grams (G)</option>
+              <option value="kilogram">Kilogram (KG)</option>
+            </select>
+          </div>
+              <div class="col-11">
                 <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart"  data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasCart"
             aria-controls="offcanvasCart">
@@ -214,6 +220,12 @@ SpicesMasalas.forEach(product => {
               <input type="number" class="form-control border-dark-subtle input-number quantity" value="1" />
             </div>
             <div class="col-7">
+            <select name="unit" class="form-select border-dark-subtle" style="height: 41px;">
+              <option value="grams">Grams (G)</option>
+              <option value="kilogram">Kilogram (KG)</option>
+            </select>
+          </div>
+            <div class="col-11">
               <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasCart"
             aria-controls="offcanvasCart">
@@ -311,6 +323,12 @@ NutsDryFruits.forEach(product => {
               <input type="number" class="form-control border-dark-subtle input-number quantity" value="1" />
             </div>
             <div class="col-7">
+            <select name="unit" class="form-select border-dark-subtle" style="height: 41px;">
+              <option value="grams">Grams (G)</option>
+              <option value="kilogram">Kilogram (KG)</option>
+            </select>
+          </div>
+            <div class="col-11">
               <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasCart"
             aria-controls="offcanvasCart">
@@ -426,6 +444,12 @@ HerbsSeasonings.forEach(product => {
               <input type="number" class="form-control border-dark-subtle input-number quantity" value="1" />
             </div>
             <div class="col-7">
+            <select name="unit" class="form-select border-dark-subtle" style="height: 41px;">
+              <option value="grams">Grams (G)</option>
+              <option value="kilogram">Kilogram (KG)</option>
+            </select>
+          </div>
+            <div class="col-11">
               <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasCart"
             aria-controls="offcanvasCart">
@@ -522,6 +546,12 @@ Sweeteners.forEach(product => {
               <input type="number" class="form-control border-dark-subtle input-number quantity" value="1" />
             </div>
             <div class="col-7">
+            <select name="unit" class="form-select border-dark-subtle" style="height: 41px;">
+              <option value="grams">Grams (G)</option>
+              <option value="kilogram">Kilogram (KG)</option>
+            </select>
+          </div>
+            <div class="col-11">
               <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasCart"
             aria-controls="offcanvasCart">
@@ -608,6 +638,12 @@ LeavesSpices.forEach(product => {
               <input type="number" class="form-control border-dark-subtle input-number quantity" value="1" />
             </div>
             <div class="col-7">
+            <select name="unit" class="form-select border-dark-subtle" style="height: 41px;">
+              <option value="grams">Grams (G)</option>
+              <option value="kilogram">Kilogram (KG)</option>
+            </select>
+          </div>
+            <div class="col-11">
               <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasCart"
             aria-controls="offcanvasCart">
@@ -720,6 +756,12 @@ PackagedItems.forEach(product => {
               <input type="number" class="form-control border-dark-subtle input-number quantity" value="1" />
             </div>
             <div class="col-7">
+            <select name="unit" class="form-select border-dark-subtle" style="height: 41px;">
+              <option value="grams">Grams (G)</option>
+              <option value="kilogram">Kilogram (KG)</option>
+            </select>
+          </div>
+            <div class="col-11">
               <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasCart"
             aria-controls="offcanvasCart">
@@ -815,6 +857,12 @@ GroceryEssentials.forEach(product => {
               <input type="number" class="form-control border-dark-subtle input-number quantity" value="1" />
             </div>
             <div class="col-7">
+            <select name="unit" class="form-select border-dark-subtle" style="height: 41px;">
+              <option value="grams">Grams (G)</option>
+              <option value="kilogram">Kilogram (KG)</option>
+            </select>
+          </div>
+            <div class="col-11">
               <a href="#" class="btn btn-primary rounded-1 p-2 fs-7 btn-cart" data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasCart"
             aria-controls="offcanvasCart">
